@@ -6,3 +6,17 @@ style the :link, :visited, :active, :hover state of your links
 use combinators instead of classes if possible: footer ul > li instead of .footer-list-item
 
 */
+
+
+
+a::before
+
+a:link
+
+a:visited
+
+a:active
+
+a:hover
+
+
