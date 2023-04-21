@@ -7,16 +7,43 @@ use combinators instead of classes if possible: footer ul > li instead of .foote
 
 */
 
+:root {
+  --primary-color: #1b1717;
+  --nav-bgcolor: #393e46;
+  --links-color: #ffb804;
+  --links-hovercolor: #ff8622;
+  --links-visitedcolor: #ca781b;
+  --background-color: #eeebdd;
+}
 
+* {
+  box-sizing: border-box;
+}
 
-a::before
+body {
+  background-color: var(--background-color);
+}
 
-a:link
+nav {
+  background-color: var(--nav-bgcolor);
+}
 
-a:visited
+nav li > a {
+  color: var(--links-color);
+}
 
-a:active
+nav li > a::before {
+  content: icon;
+}
 
-a:hover
+nav li > a:hover {
+  color: var(--links-hovercolor);
+}
 
+nav li > a:active {
+  background-color: var(--links-visitedcolor);
+}
 
+nav li > a:visited {
+  color: var(--links-visitedcolor);
+}
