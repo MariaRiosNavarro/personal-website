@@ -24,6 +24,8 @@ body {
   background-color: var(--background-color);
 }
 
+/* Navigation Styles */
+
 nav {
   background-color: var(--nav-bgcolor);
 }
@@ -48,6 +50,29 @@ nav li > a:visited {
   color: var(--links-visitedcolor);
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+/* Styles of Profil foto and Heading */
+
+h1 {
+  position: relative;
+  top: 30px;
+}
 .profil-image {
   border-radius: 450%;
 }
