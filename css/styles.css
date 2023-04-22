@@ -27,7 +27,7 @@ body {
 /* Styles of Heading div with logo */
 
 .title-div {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row-reverse;
   z-index: 1;
@@ -39,6 +39,8 @@ body {
   font-size: 20px;
   color: var(--links-color);
 }
+
+.title
 
 .profil-image {
   border-radius: 450%;
