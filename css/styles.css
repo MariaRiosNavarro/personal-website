@@ -47,3 +47,7 @@ nav li > a:active {
 nav li > a:visited {
   color: var(--links-visitedcolor);
 }
+
+.profil-image {
+  border-radius: 450%;
+}
