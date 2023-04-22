@@ -24,6 +24,26 @@ body {
   background-color: var(--background-color);
 }
 
+/* Styles of Heading div with logo */
+
+.title-div {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  z-index: 1;
+  gap: 2rem;
+}
+
+.title,
+.subtitle {
+  font-size: 20px;
+  color: var(--links-color);
+}
+
+.profil-image {
+  border-radius: 450%;
+}
+
 /* Navigation Styles */
 
 nav {
@@ -65,14 +85,4 @@ nav {
 
 .nav-item {
   text-decoration: none;
-}
-
-/* Styles of Profil foto and Heading */
-
-h1 {
-  position: relative;
-  top: 30px;
-}
-.profil-image {
-  border-radius: 450%;
 }
