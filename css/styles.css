@@ -61,7 +61,6 @@ header {
   justify-content: flex-end;
   gap: 1rem;
   z-index: 1;
-  border: 2px solid green;
   width: 100%;
 }
 
@@ -70,7 +69,7 @@ header {
   justify-content: space-between;
   z-index: 1;
   gap: 1rem;
-  border: 2px solid violet;
+
 }
 
 .title,
@@ -99,7 +98,6 @@ header {
 /* Navigation Styles */
 
 nav {
-  border: 2px solid red;
   width: 100%;
 }
 
