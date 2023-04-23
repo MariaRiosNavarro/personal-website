@@ -10,7 +10,7 @@ to do/ask: why i habe a separation from html document: margin 0 to body!!
   --primary-color: #ff2828;
   --nav-bgcolor: #0c2233;
   --links-color: #fdc045;
-  --links-hovercolor: #128bb7;
+  --links-hovercolor: #00216c;
   --links-visitedcolor: #ffb514;
   --background-color: #f2e39e;
   --background-color-secundary: #bcf0fc;
@@ -68,6 +68,7 @@ header {
   justify-content: space-between;
   z-index: 1;
   gap: 1rem;
+  padding-top: 0.3rem;
 }
 
 .title,
@@ -77,19 +78,19 @@ header {
 
 .title {
   flex-shrink: 0;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 70;
 }
 
 .subtitle {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 50;
-  padding-top: 0.35rem;
+  padding-top: 0.37rem;
 }
 
 .logo {
-  margin-top: 0;
-  border: 2px solid black;
+  margin-top: 0.1rem;
+  padding-left: 0.2rem;
   height: 3rem;
 }
 
@@ -105,6 +106,8 @@ nav li > a {
 
 nav li > a:hover {
   color: var(--links-hovercolor);
+  text-decoration: underline;
+  text-decoration-color: var(--links-visitedcolor);
 }
 
 nav li > a:active {
@@ -125,6 +128,7 @@ nav li > a:visited {
 
 .nav-item {
   text-decoration: none;
+  font-size: 18px;
 }
 
 /* Body Styles <main></main>*/
@@ -132,4 +136,5 @@ nav li > a:visited {
 main {
   position: absolute;
   top: 8rem;
+  color: var(--links-hovercolor);
 }
