@@ -157,7 +157,7 @@ h4::before {
   content: " ► ";
 }
 
-.bio-secction {
+.bio-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
