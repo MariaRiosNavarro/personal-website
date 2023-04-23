@@ -12,16 +12,17 @@ use combinators instead of classes if possible: footer ul > li instead of .foote
 }
 
 :root {
-  --primary-color: #1b1717;
-  --nav-bgcolor: #393e46;
-  --links-color: #ffb804;
-  --links-hovercolor: #ff8622;
-  --links-visitedcolor: #ca781b;
+  --primary-color: #932329;
+  --nav-bgcolor: #0c2233;
+  --links-color: #fdc045;
+  --links-hovercolor: #128bb7;
+  --links-visitedcolor: #ffb514;
   --background-color: #eeebdd;
+  --background-color-secundary: #bcf0fc;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-secundary);
 }
 
 /* Styles of Heading div with logo */
@@ -43,17 +44,21 @@ header {
   display: flex;
   flex-direction: column;
   z-index: 1;
-  gap: 0.2rem;
+  gap: 3px;
+  margin-top: 0.2rem;
 }
 
 .title,
 .subtitle {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--links-color);
+  margin-left: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .logo {
-  background-color: var(--background-color);
+  background-color: var(--background-color-secundary);
 }
 
 /* Navigation Styles */
