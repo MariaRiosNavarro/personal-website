@@ -133,6 +133,18 @@ nav li > a:visited {
 
 /* Body Styles <main></main>*/
 
+
+
+main {
+  position: absolute;
+  top: 8rem;
+  color: var(--links-hovercolor);
+}
+
+
+
+/* Styles section: bio-secction */
+
 li {
   list-style: none;
 }
@@ -140,12 +152,6 @@ li {
 h3::before,
 h4::before {
   content: " ► ";
-}
-
-main {
-  position: absolute;
-  top: 8rem;
-  color: var(--links-hovercolor);
 }
 
 .certification-link {
