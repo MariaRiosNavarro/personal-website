@@ -137,9 +137,16 @@ main {
   position: absolute;
   top: 8rem;
   color: var(--links-hovercolor);
+  width: 100%;
 }
 
 /* ---General Styles for the 2 Article in bio secction */
+
+.bio_and_career_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 li {
   list-style: none;
@@ -148,11 +155,6 @@ li {
 h3::before,
 h4::before {
   content: " ► ";
-}
-
-.certification-link {
-  text-decoration: none;
-  color: var(--links-hovercolor);
 }
 
 .bio-secction {
@@ -169,6 +171,7 @@ h4::before {
   display: flex;
   flex-direction: column;
   border: 2px solid red;
+  width: 100%;
 }
 
 .bio-description {
@@ -179,5 +182,10 @@ h4::before {
 .bio-career {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 100%;
+}
+
+.certification-link {
+  text-decoration: none;
+  color: var(--links-hovercolor);
 }
