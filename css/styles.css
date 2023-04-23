@@ -105,7 +105,6 @@ nav li > a {
 }
 
 nav li > a:hover {
-  color: var(--links-hovercolor);
   text-decoration: underline;
   text-decoration-color: var(--links-visitedcolor);
 }
@@ -194,9 +193,16 @@ h4::before {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  position: relative;
+  left: -4rem;
 }
 
 .certification-link {
   text-decoration: none;
   color: var(--links-hovercolor);
+}
+
+.certification-link:hover {
+  text-decoration: underline;
+  text-decoration-color: ;
 }
