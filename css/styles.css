@@ -1,10 +1,5 @@
 /* 
-Continue to build your personal website. Include some of the selectors you learned today. For example:
-
-create a decorator element with a ::before selector
-style the :link, :visited, :active, :hover state of your links
-use combinators instead of classes if possible: footer ul > li instead of .footer-list-item
-
+to do/ask: why i habe a separation from html document: margin 0 to body!!
 */
 
 * {
@@ -25,6 +20,7 @@ body {
   background-color: var(--background-color);
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  margin: 0;
 }
 
 /* Styles of Heading div with logo */
@@ -33,36 +29,6 @@ header {
   display: flex;
   position: fixed;
   top: 0;
-}
-
-.title-and-logo-container {
-  display: flex;
-  flex-direction: row-reverse;
-  z-index: 1;
-  padding-left: 2rem;
-}
-
-.titles-div {
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  gap: 3px;
-  margin-top: 0.2rem;
-}
-
-.title,
-.subtitle {
-  font-size: 16px;
-  color: var(--links-color);
-  margin-left: 0.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 70;
-}
-
-/* Navigation Styles */
-
-nav {
   /* if body is var(--background-color: (yellow))*/
   background: rgb(12, 34, 51);
   background: linear-gradient(
@@ -72,25 +38,52 @@ nav {
     rgba(137, 187, 199, 1) 79%,
     rgba(242, 227, 158, 1) 93%
   );
-
   /* if body is var(--background-color-secundary: (blue)) */
   /* background: rgb(12, 34, 51);
-  background: linear-gradient(
-    180deg,
-    rgba(12, 34, 51, 1) 0%,
-    rgba(18, 139, 183, 1) 69%,
-    rgba(188, 240, 252, 1) 100%
-  ); */
+    background: linear-gradient(
+      180deg,
+      rgba(12, 34, 51, 1) 0%,
+      rgba(18, 139, 183, 1) 69%,
+      rgba(188, 240, 252, 1) 100%
+    ); */
+  width: 100%;
+  height: 8rem;
+}
 
+.title-and-logo-container {
+  display: flex;
+  flex-direction: row-reverse;
+  z-index: 1;
+}
+
+.titles-div {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 3px;
+}
+
+.title,
+.subtitle {
+  font-size: 16px;
+  color: var(--links-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 70;
+}
+
+/* Navigation Styles */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  top: 0;
   height: 6rem;
 }
 
 nav li > a {
   color: var(--links-color);
-}
-
-nav li > a::before {
-  content: icon;
 }
 
 nav li > a:hover {
@@ -105,19 +98,12 @@ nav li > a:visited {
   color: var(--links-visitedcolor);
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  top: 0;
-}
-
 .nav-list {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
   list-style: none;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 
 .nav-item {
