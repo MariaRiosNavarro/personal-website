@@ -171,11 +171,11 @@ h4::before {
   display: flex;
   flex-direction: column;
   border: 2px solid red;
-  width: 100%;
+  width: ;
 }
 
 .bio-description {
-  max-width: 182px;
+  max-width: 219px;
 }
 
 /* --Styles bio-career */
