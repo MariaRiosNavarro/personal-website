@@ -174,14 +174,14 @@ h4::before {
   width: 50%;
 }
 
-.bio-header-title {
-  padding-bottom: 2rem;
-
-}
-
 .bio-description {
   padding-top: 1rem;
   max-width: 255px;
+}
+
+.bio-logo-top,
+.bio-logo-bottom {
+  height: 4rem;
 }
 
 /* --Styles bio-career */
@@ -190,7 +190,6 @@ h4::before {
   flex-direction: column;
   max-width: 50%;
   border: 2px solid blue;
-  
 }
 
 .certification-link {
