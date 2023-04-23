@@ -133,17 +133,13 @@ nav li > a:visited {
 
 /* Body Styles <main></main>*/
 
-
-
 main {
   position: absolute;
   top: 8rem;
   color: var(--links-hovercolor);
 }
 
-
-
-/* Styles section: bio-secction */
+/* ---General Styles for the 2 Article in bio secction */
 
 li {
   list-style: none;
@@ -157,4 +153,31 @@ h4::before {
 .certification-link {
   text-decoration: none;
   color: var(--links-hovercolor);
+}
+
+.bio-secction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 3px solid green;
+}
+
+/* ---Styles bio-header in bio-Section */
+
+.bio-header {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.bio-description {
+  max-width: 182px;
+}
+
+/* --Styles bio-career */
+.bio-career {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
 }
