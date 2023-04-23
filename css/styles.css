@@ -133,8 +133,22 @@ nav li > a:visited {
 
 /* Body Styles <main></main>*/
 
+li {
+  list-style: none;
+}
+
+h3::before,
+h4::before {
+  content: " ► ";
+}
+
 main {
   position: absolute;
   top: 8rem;
+  color: var(--links-hovercolor);
+}
+
+.certification-link {
+  text-decoration: none;
   color: var(--links-hovercolor);
 }
