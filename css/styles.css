@@ -162,7 +162,6 @@ h4::before {
   flex-direction: row;
   justify-content: space-between;
   gap: 2rem;
-  border: 3px solid green;
 }
 
 /* ---Styles bio-header in bio-Section */
@@ -170,19 +169,25 @@ h4::before {
 .bio-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 2px solid red;
-  width: 100%;
+  width: 50%;
+}
+
+.bio-header-title {
+  padding-top: 3rem;
 }
 
 .bio-description {
-  max-width: 219px;
+  max-width: 255px;
 }
 
 /* --Styles bio-career */
 .bio-career {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 50%;
+  border: 2px solid blue;
 }
 
 .certification-link {
