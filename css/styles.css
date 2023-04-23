@@ -23,6 +23,7 @@ use combinators instead of classes if possible: footer ul > li instead of .foote
 
 body {
   background-color: var(--background-color-secundary);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Styles of Heading div with logo */
