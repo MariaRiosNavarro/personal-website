@@ -7,6 +7,10 @@ use combinators instead of classes if possible: footer ul > li instead of .foote
 
 */
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: #1b1717;
   --nav-bgcolor: #393e46;
@@ -16,22 +20,31 @@ use combinators instead of classes if possible: footer ul > li instead of .foote
   --background-color: #eeebdd;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: var(--background-color);
 }
 
 /* Styles of Heading div with logo */
 
-.title-div {
+header {
+  display: flex;
+}
+
+.title-and-logo-container {
   position: fixed;
+  top: 0;
   display: flex;
   flex-direction: row-reverse;
   z-index: 1;
-  gap: 2rem;
+}
+
+.titles-div {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 0.2rem;
 }
 
 .title,
@@ -40,10 +53,8 @@ body {
   color: var(--links-color);
 }
 
-.title
-
-.profil-image {
-  border-radius: 450%;
+.logo {
+  background-color: var(--background-color);
 }
 
 /* Navigation Styles */
@@ -88,3 +99,5 @@ nav {
 .nav-item {
   text-decoration: none;
 }
+
+/* Body Styles */
