@@ -12,18 +12,19 @@ use combinators instead of classes if possible: footer ul > li instead of .foote
 }
 
 :root {
-  --primary-color: #932329;
+  --primary-color: #ff2828;
   --nav-bgcolor: #0c2233;
   --links-color: #fdc045;
   --links-hovercolor: #128bb7;
   --links-visitedcolor: #ffb514;
-  --background-color: #eeebdd;
+  --background-color: #f2e39e;
   --background-color-secundary: #bcf0fc;
 }
 
 body {
-  background-color: var(--background-color-secundary);
+  background-color: var(--background-color);
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 /* Styles of Heading div with logo */
@@ -38,7 +39,7 @@ header {
   display: flex;
   flex-direction: row-reverse;
   z-index: 1;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .titles-div {
@@ -56,16 +57,32 @@ header {
   margin-left: 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.logo {
-  background-color: var(--background-color-secundary);
+  font-weight: 70;
 }
 
 /* Navigation Styles */
 
 nav {
-  background-color: var(--nav-bgcolor);
+  /* if body is var(--background-color: (yellow))*/
+  background: rgb(12, 34, 51);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 34, 51, 1) 0%,
+    rgba(18, 139, 183, 1) 61%,
+    rgba(137, 187, 199, 1) 79%,
+    rgba(242, 227, 158, 1) 93%
+  );
+
+  /* if body is var(--background-color-secundary: (blue)) */
+  /* background: rgb(12, 34, 51);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 34, 51, 1) 0%,
+    rgba(18, 139, 183, 1) 69%,
+    rgba(188, 240, 252, 1) 100%
+  ); */
+
+  height: 6rem;
 }
 
 nav li > a {
