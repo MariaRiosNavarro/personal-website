@@ -204,5 +204,7 @@ h4::before {
 
 .certification-link:hover {
   text-decoration: underline;
-  text-decoration-color: ;
+  text-decoration-color: var(--links-hovercolor);
 }
+
+
